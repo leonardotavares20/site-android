@@ -1,0 +1,201 @@
+@charset 'UTF-8';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
+
+:root {
+    --cor00: #9DFFB7;
+    --cor01: #2DF763;
+    --cor02: #24C74F;
+    --cor03: #1C993D;
+    --cor04: #15692B;
+}
+:root {
+     --fontetitulo: 'Bebas Neue', cursive;
+     --fonteparagrafo: 'Mulish', sans-serif;
+     --fontesubtitulos: 'Idroid', sans-serif;
+
+}
+@font-face {
+    font-family: 'Idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--cor00);
+    margin: 0px; 
+    text-align: justify;
+}
+header {
+    background-image: linear-gradient(to top, #15692B, #1C993D, #24C74F);
+    min-width: 150px;
+    padding-top: 40px;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--fontetitulo);
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.479);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+header > p {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Mulish', sans sans-serif;
+}
+nav {
+    padding-left: 15px;
+    margin-top: 50px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+nav > a {
+    font-size: 1.2em;
+    font-family: var(--fonteparagrafo);
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+}
+nav > a:hover {
+    background-color: #24C74F;
+    color: rgb(41, 63, 41);
+    transition-duration: 0.6s;
+}
+article > h1 {
+    font-size: 1.7em;
+    font-family: 'Idroid', sans-serif;
+    padding: 2px 5px;
+    background-image: linear-gradient(to right , #b8e6a6, white);
+    border-radius: 4px;
+    color: var(--cor04);
+}
+article > h2 {
+    font-family: var(--fontesubtitulos);
+    background-image: linear-gradient(to right , #b8e6a6, white);
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 1.3em;
+    color: var(--cor04);
+}
+aside > h3 {
+    font-family: var(--fonteparagrafo);
+    background-color: var(--cor02);
+    margin-top: -1px;
+    border-radius: 5px 5px 0px 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+    color: white;
+}
+main {
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 320px;
+    max-width: 800px;
+}
+p {
+    font-family: var(--fonteparagrafo);
+    font-size: 1.2em;
+    text-indent: 20px;
+    font-weight: 500px;
+    margin: 10px;
+}
+img.imagens {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+aside {
+    background-color: rgb(221, 197, 197);
+    padding: 1px 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+   
+    min-width: 320px;
+    max-width: 780px;
+}
+article > div > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+div.videoandroid {
+   background-color: var(--cor04);
+   margin: 0px -20px;
+   position: relative;
+   padding-bottom: 59%;
+   margin-bottom: 10px;
+}
+aside > p {
+    margin-bottom: 5px; 
+}
+.lista::before {
+    content: '✔ ';
+}
+footer  {
+    background-color: var(--cor03);
+    text-align: center;
+    padding: 2px;
+    margin-top: 15px;
+}
+footer > p {
+    padding: 0px;
+    color: white;
+    font-size: bold ;
+    line-height: 0.5em;
+}
+ul {
+    font-family: 'Mulish', sans-serif;
+    min-width: 320px;
+    max-width: 800px;
+    columns: 2;
+    text-decoration: none;
+    margin-left: 10px;
+}
+abbr {
+    text-decoration: none;
+}
+.emojilink::after {
+    content: '🔗';
+}
+.emojilink {
+    text-decoration: none;
+    color: var(--cor03);
+}
+.emojilink:hover {
+    text-decoration: underline;
+    color: var(--cor04);
+}
+.linkfooter {
+    text-decoration: none;
+    color: white;
+}
+.linkfooter:hover {
+    text-decoration: underline;
+}
+.imagenbug {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+}
